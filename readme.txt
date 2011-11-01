@@ -10,21 +10,21 @@ An easy to configure Twitter Plugin with Pretty URLs.
 
 == Description ==
 
-With Twitter Wings you can :
+With Twitter Wings you can:
 
-- display your latest tweets
-- replace t.co links with display URLs (pretty links)
-- add/configure a Twitter Follow Button
-- include tweets from one or multiple accounts
-- cache tweets for faster page load
-- customize the timestamp
-- show/hide username
-- show/hide display name
-- filter tweets by hashtags
-- strip hashtags from tweets
-- show/hide retweets
-- show/hide replies
-- implement as a widget or by using `TwitterWings()` template function
+* display your latest tweets
+* replace t.co links with display URLs (pretty links)
+* add/configure a Twitter Follow Button
+* include tweets from one or multiple accounts
+* cache tweets for faster page load
+* customize the timestamp
+* show/hide username
+* show/hide display name
+* filter tweets by hashtags
+* strip hashtags from tweets
+* show/hide retweets
+* show/hide replies
+* implement as a widget or by using `TwitterWings()` template function
 
 More information about Twitter Wings is available at https://github.com/joepahl/twitter-wings
 
@@ -48,3 +48,9 @@ More information about Twitter Wings is available at https://github.com/joepahl/
 1. Twitter Wings in action, sample configurations
 2. Twitter Wings options page
 3. Sidebar widget
+
+== Changelog ==
+
+= 1.1 =
+* added alt attribute to avatar image
+* replaced strftime function, with generic date function
