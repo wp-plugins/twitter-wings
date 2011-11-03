@@ -43,7 +43,22 @@ function tw_options_page() {
 }
 
 function TwitterWings(){
+	
+	$title = "<h3 class='tw-title'>" . apply_filters('widget_title', get_option('tw_title')) . "</h3>";
+	
+	if (follow_place() == 'above') {
+		$title = "<header class='tw-header'>$title" . tw_follow() . "</header>";
+	}
+	
+	echo "<aside id='twitter-wings' class='tw-widget'>$title";
+	
 	new TwitterWingsStart;
+	
+	if (follow_place() == 'below') {
+		echo "<footer>" . tw_follow() . "</footer>";
+	}
+	
+	echo "</aside>";
 }
 
 class TwitterWingsStart {
